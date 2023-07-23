@@ -108,13 +108,19 @@ body {
     position: absolute;
     height: 100vh;
     width: 300px;
-    background-color: #1F1F1F;
+    background: #000;
     left: 0%;
     top: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-left: 40px;
+}
+.main .container .header .right .bar .offcanvas .top .menu{
+  margin-top: 50px;
+}
+.main .container .header .right .bar .offcanvas .top h1{
+  font-size: 26px;
 }
 .main .container .header .right .watchList {
   position: relative;
@@ -306,7 +312,56 @@ body {
 
 .slider{
     background-color: #1f1f1f;
+    display: flex;
+  justify-content: center;
 }
+
+.slider .container {
+  width: 80%;
+}
+.slider .container .cards{
+  position: relative;
+  margin: 40px 0px;
+}
+.slider .container .cards .buttons .btn{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.slider .container .cards .buttons .prev{
+position: absolute;
+top: 25%;
+left: 0%;
+}
+.slider .container .cards .buttons .next{
+  position: absolute;
+  top: 25%;
+  right: 0%;
+}
+.slider .container .cards .box {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.slider .container .cards .box::-webkit-scrollbar {
+  display: none;
+}
+.slider .container .cards .box .card{
+  margin-right: 20px;
+  flex: 0 0 auto;
+  width: 270px;
+}
+.slider .container .cards .box .card .card-img{
+  width: 100%;
+}
+.slider .container .cards .box .card .card-img img{
+  width: 100%;
+}
+.slider .container .cards .box .card .card-text{
+  color: white;
+}
+
 
 
 /* --------------------------------------------------------------- Media ------------------------------------------------------------------*/
@@ -361,4 +416,10 @@ body {
     .main .container .header .right .bar{
         display: block;
     }
+}
+
+@media(max-width: 350px){
+  .main .container .header .right .bar .offcanvas{
+    width: 200px;
+}
 }
