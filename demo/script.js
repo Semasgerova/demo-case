@@ -67,3 +67,8 @@ scrollBoxes.forEach((scrollBox, i) => {
     scrollBox.scrollLeft -= containerWidth;
   });
 });
+
+//Wathclist
+const card = document.querySelectorAll('.slider .container .cards .box .card');
+
+card
