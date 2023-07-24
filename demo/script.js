@@ -68,7 +68,17 @@ scrollBoxes.forEach((scrollBox, i) => {
   });
 });
 
-//Wathclist
-const card = document.querySelectorAll('.slider .container .cards .box .card');
 
-card
+// const cards = document.querySelectorAll('.slider .container .cards .box .card');
+// const box = document.querySelector('.slider .container .cards .box');
+
+
+// cards.forEach((card) => {
+//   card.addEventListener("mouseenter", () => {
+//     box.style.height = "400px"; // Change the width to desired size on hover
+//   });
+
+//   card.addEventListener("mouseleave", () => {
+//     box.style.height = "200px";  // Revert back to the initial width on mouse leave
+//   });
+// });

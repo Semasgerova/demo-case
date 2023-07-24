@@ -137,6 +137,9 @@ justify-content: center;
 .main .container .header .right .bar{
   cursor: pointer;
 }
+.main .container .header .right .bar .offcanvas{
+  z-index: 1111;
+}
 .main .container .header .right .bar .offcanvas .top .menu{
   margin-top: 50px;
 }
@@ -405,10 +408,12 @@ backdrop-filter: blur(6.875px);
   background: transparent;
   border: none;
   cursor: pointer;
+  z-index: 111;
 }
 .slider .container .cards .buttons .btn svg{
   width: 56px;
   height: 53px;
+  
 }
 .slider .container .cards .buttons .prev{
 position: absolute;
@@ -423,7 +428,7 @@ left: 0%;
 
 .slider .container .cards .box {
   display: flex;
-  overflow-x: hidden;
+  overflow-x: scroll;
   scroll-behavior: smooth;
 }
 .slider .container .cards .box::-webkit-scrollbar {
@@ -448,17 +453,16 @@ left: 0%;
   width: 270px;
   transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
   border-radius: 6.583px;
-  position: relative;
  }
 .slider .container .cards .box .card:hover{
-  transform: scale(1.3);
-  height: 300px;
-  z-index: 999;
+  width: 300px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 320px;
   background: radial-gradient(107.32% 141.42% at 0% 0%, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.00) 100%);
 box-shadow: -2.244035243988037px -2.244035243988037px 112.2017822265625px 0px rgba(255, 255, 255, 0.02) inset;
 backdrop-filter: blur(7.5px);
-position: absolute;
-top: -20%;
+
 }
 .slider .container .cards .box .card .text{
   display: none;
@@ -485,7 +489,7 @@ top: -20%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 0px;
+  padding: 30px 0px;
 }
 .slider .container .cards .box .card .text .bottom .icon{
   width: 10%;
