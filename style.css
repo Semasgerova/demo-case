@@ -545,6 +545,22 @@ height: 15px;
         width: 50%;
     }
 }
+@media (max-width:992px){
+  .main .container .header .right .register{
+    right: 20%;
+  }
+  .main .container .header .right .button{
+    right: 19%;
+  }
+  .main .container .header .right ul{
+    right: 20%;
+    top: 28%;
+  }
+  .main .container .header .right .btn {
+    right: 19%;
+    top: 29%;
+  }
+}
 @media (max-width: 900px){
     .main .container .header .left .logo {
         font-size: 20.2px;
