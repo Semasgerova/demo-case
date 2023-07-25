@@ -348,6 +348,10 @@ justify-content: center;
   background: #0D0D0D;
   color: white;
   padding-left: 20px;
+  border-top-color: rgba(12,249,239,1);
+  border-right-color: #86b7f8;
+  border-left-color: #86b7f8;
+  border-bottom-color: #D78BFE;
 }
 .main .container .header .right .register .register-main .forgot{
    width: 100%;
@@ -360,13 +364,23 @@ justify-content: center;
   justify-content: space-between;
   align-items: center;
 }
+.main .container .header .right .register .register-main .btns .sign{
+  cursor: pointer;
+}
 .main .container .header .right .register .register-main .btns .sign-in{
+  cursor: pointer;
   display: flex;
 padding: 14px 59px;
 justify-content: center;
 align-items: center;
 flex-shrink: 0;
-  border-radius: 55px;
+border-radius: 55px;
+border-width: 1px;
+border-style: solid;
+border-top-color: rgba(12,249,239,1);
+border-right-color: #86b7f8;
+border-left-color: #86b7f8;
+border-bottom-color: #D78BFE;
 background: radial-gradient(107.32% 141.42% at 0% 0%, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.00) 100%);
 box-shadow: -3.325335741043091px -3.325335741043091px 166.2667999267578px 0px rgba(255, 255, 255, 0.02) inset;
 backdrop-filter: blur(6.875px);
